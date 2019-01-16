@@ -11,7 +11,9 @@ Página Principal
         </div>
         <div class="col-sm">
             Olá {{ usuario.funcionario.nome }}
-            <a href="{% url 'list_funcionarios' %}">Gerenciar funcionários</a>
+            <a href="{% url 'list_funcionarios' %}">Gerenciar Funcionários</a>
+            <a href="{% url 'list_departamentos' %}">Gerenciar Departamentos</a>
+            <a href="{% url 'list_hora_extra' %}">Gerenciar Banco de Horas</a>
         </div>
         <div class="col-sm">
             <a href="{% url 'logout' %}">Logout</a>

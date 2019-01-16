@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    {% for hora_extra in object_list %}
+        <a href="{% url 'edit_hora_extra' hora_extra.id %}">
+            {{ hora_extra }}
+        </a>
+        <a href="{% url 'delete_hora_extra' hora_extra.id %}">
+            Deletar
+        </a>
+        <br>
+    {% endfor %}
+    <a href="{% url 'create_hora_extra' %}">Novo</a>
+{% endblock %}
